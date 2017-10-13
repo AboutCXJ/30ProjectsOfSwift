@@ -19,12 +19,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //        for family in UIFont.familyNames {
-        //            print("font-family:",family)
-        //            for font in UIFont.fontNames(forFamilyName: family) {
-        //                print("font-name:",font)
-        //            }
-        //        }
+//                for family in UIFont.familyNames {
+//                    print("font-family:",family)
+//                    for font in UIFont.fontNames(forFamilyName: family) {
+//                        print("font-name:",font)
+//                    }
+//                }
         self.setupUI()
         
     }
