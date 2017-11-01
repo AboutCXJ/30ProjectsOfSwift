@@ -31,9 +31,9 @@ class ViewController: UIViewController {
     }
     
     @objc func rollingBtnClick() {
-        let random1 = Int(arc4random()) % (self.datas.count - 1)
-        let random2 = Int(arc4random()) % (self.datas.count - 1)
-        let random3 = Int(arc4random()) % (self.datas.count - 1)
+        let random1 = Int(arc4random()) % self.datas.count
+        let random2 = Int(arc4random()) % self.datas.count
+        let random3 = Int(arc4random()) % self.datas.count
         self.pickView.selectRow(random1, inComponent: 0, animated: true)
         self.pickView.selectRow(random2, inComponent: 1, animated: true)
         self.pickView.selectRow(random3, inComponent: 2, animated: true)
