@@ -65,7 +65,7 @@ class LoginViewController: UIViewController {
     
     //用户名
     lazy var nameTF: UITextField = {
-        let nameTF = UITextField(frame: CGRect(x: 30, y: 93, width: screenWidth - 60, height: 50))
+        let nameTF = UITextField(frame: CGRect(x: 30, y: 110, width: screenWidth - 60, height: 50))
         nameTF.backgroundColor = .white
         nameTF.borderStyle = .roundedRect
         nameTF.font = UIFont(name: "Avenir Next", size: 20)
@@ -76,7 +76,7 @@ class LoginViewController: UIViewController {
     
     //密码
     lazy var pwTF: UITextField = {
-        let pwTF = UITextField(frame: CGRect(x: 30, y: 163, width: screenWidth - 60, height: 50))
+        let pwTF = UITextField(frame: CGRect(x: 30, y: 180, width: screenWidth - 60, height: 50))
         pwTF.backgroundColor = .white
         pwTF.borderStyle = .roundedRect
         pwTF.font = UIFont(name: "Avenir Next", size: 20)
@@ -87,7 +87,7 @@ class LoginViewController: UIViewController {
     
     //登录按钮
     lazy var loginBtn: UIButton = {
-        let loginBtn = UIButton(frame: CGRect(x: 100, y: 230 , width: screenWidth - 200, height: 45))
+        let loginBtn = UIButton(frame: CGRect(x: 100, y: 250 , width: screenWidth - 200, height: 45))
         loginBtn.backgroundColor = UIColor(red: 23/255.0, green: 139/255.0, blue: 3/255.0, alpha: 1.0)
         loginBtn.layer.cornerRadius = 4
         loginBtn.layer.masksToBounds = true
@@ -100,7 +100,7 @@ class LoginViewController: UIViewController {
     
     //标题
     lazy var titleLB: UILabel = {
-        let titleLB = UILabel(frame: CGRect(x: screenWidth - 200, y: 20, width: 100, height: 40))
+        let titleLB = UILabel(frame: CGRect(x: (screenWidth - 100)*0.5, y: 40, width: 100, height: 40))
          titleLB.font = UIFont(name: "Avenir Next", size: 22)
         titleLB.textAlignment = .center
         titleLB.textColor = .white
@@ -109,7 +109,7 @@ class LoginViewController: UIViewController {
     }()
     
     lazy var backBtn: UIButton = {
-        let backBtn = UIButton(frame: CGRect(x: 15, y: 20, width: 40, height: 40))
+        let backBtn = UIButton(frame: CGRect(x: 15, y: 40, width: 40, height: 40))
         backBtn.setImage(UIImage(named: "Back-icon"), for: .normal)
         backBtn.addTarget(self, action: #selector(backBtnClick), for: .touchUpInside)
         return backBtn

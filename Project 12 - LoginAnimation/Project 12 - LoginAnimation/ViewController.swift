@@ -71,7 +71,7 @@ class ViewController: UIViewController {
     
     //logo
     lazy var logoView: UIImageView = {
-        let logoView = UIImageView(frame: CGRect(x: 20, y: 40, width: screenWidth - 40, height: 80))
+        let logoView = UIImageView(frame: CGRect(x: 20, y: 60, width: screenWidth - 40, height: 80))
         logoView.contentMode = .scaleAspectFit
         logoView.image = UIImage(named: "logo")
         return logoView

@@ -52,7 +52,7 @@ class ViewController: UIViewController {
     lazy var refreshCtr: UIRefreshControl = {
         let refreshCtr = UIRefreshControl()
         refreshCtr.addTarget(self, action: #selector(refreshHead), for: .valueChanged)
-        let attributes = [NSAttributedStringKey.foregroundColor: UIColor.black]
+        let attributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
         refreshCtr.attributedTitle = NSAttributedString.init(string: "下拉刷新", attributes: attributes)
         return refreshCtr
     }()
